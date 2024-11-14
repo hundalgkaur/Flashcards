@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geography Memory Board</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            justify-items: center;
+        }
+        h1
+        {
+
+            background-color:wheat;
+            font-size: 34px;
+            margin-bottom: 10px;
+            font-style: oblique;
+        }
+        .container {
+
+            display:flex;
+            flex-wrap: wrap;
+            height:100vh;
+            width:50vw;
+
+            justify-content: center; /* Center items horizontally */
+            align-items: center;
+            margin: 5px; /* Add some margin around the container */
+            background-color:wheat;
+        }
+        .card
+        {
+            height: 150px;
+            width: 150px;
+            position: relative;
+            z-index: 1;
+            margin: 20px;
+            text-align: center;
+            transition: all 1s linear;
+            transform-style: preserve-3d;
+            background-color: transparent;
+
+        }
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+        .front,.back {
+            margin: 5px;
+            padding: 20px;
+
+            border: 1px solid #ccc;
+            border-radius: 15px;
+
+            width: 100px;
+            height:100px;
+            text-align: center;
+            position: absolute;
+            backface-visibility: hidden;
+
+
+
+        }
+        .front
+        {
+            background-color:orangered ;
+            z-index : 2;
+
+        }
+
+        .back
+        {
+            background-color: aliceblue;
+            transform: rotateY(180deg);
+            z-index: -1;
+        }
+
+
+
+
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Animals and Their Babies</h1>
+<div class="container">
+    <div class="card">
+
+        <div class="front">Dog</div>
+        <div class="back">Puppy</div></div>
+
+    <div class="card">
+
+        <div class="front">cat</div>
+        <div class="back">kitten</div></div>
+    <div class="card">
+
+        <div class="front">Duck</div>
+        <div class="back">Duckling</div></div>
+    <div class="card">
+
+        <div class="front">Lion</div>
+        <div class="back">Lion Cub </div></div>
+    <div class="card">
+
+        <div class="front">Cow</div>
+        <div class="back">Calf</div></div>
+    <div class="card">
+
+        <div class="front">Deer</div>
+        <div class="back">Fawn</div></div>
+    <div class="card">
+
+        <div class="front">Tiger</div>
+        <div class="back">Tiger cub</div></div>
+    <div class="card">
+
+        <div class="front">Pig</div>
+        <div class="back">Piglet</div></div>
+    <div class="card">
+
+        <div class="front">horse</div>
+        <div class="back">Foal</div></div>
+</div>
+</body>
+</html>
